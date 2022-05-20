@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>EXERCÍCIO 10</title>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="page-header">EXERCÍCIO 10</h1>
+                <p>Fazer um programa para ler três números inteiros. Em seguida, mostrar
+                    qual o menor dentre os três números lidos. Em caso de empate, mostrar
+                    apenas uma vez.</p>
+                <p>Exemplo: <br>
+                Primeiro valor: <span style="color: red;">7</span><br>
+                Segundo valor: <span style="color: red;">3</span><br>
+                Terceiro valor: <span style="color: red;">8</span><br>
+                MENOR = 3</p>
+            </div>
+        </div>
+        <div class="container formulario">
+            <form>
+                <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">Primeiro valor:</span>
+                        <input id="inputValor1" type="number" class="form-control" aria-describedby="sizing-addon1">
+                        <span class="input-group-addon"></span> 
+                    </div>                  
+                </div>
+                <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">Segundo valor:</span>
+                        <input id="inputValor2" type="number" class="form-control" aria-describedby="sizing-addon1">
+                        <span class="input-group-addon"></span> 
+                    </div>                  
+                </div>
+                <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">Terceiro valor:</span>
+                        <input id="inputValor3" type="number" class="form-control" aria-describedby="sizing-addon1">
+                        <span class="input-group-addon"></span> 
+                    </div>                  
+                </div>                                      
+                <button type="button" class="btn btn-info" onclick="verificar()">Verificar</button>
+            </form>
+        </div>
+        <br>
+        <div class="container formulario" id="form2">
+            <form>
+                <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">Resultado:</span>                
+                        <p class="form-control" id="resultado"></p>
+                        <span class="input-group-addon"></span>                    
+                    </div>            
+                </div>                      
+            </form>      
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+                <p>Espero que  tenha gostado! Feito por Aline Almeida ❤️</p>             
+            </div>
+        </div>
+        <script src="./script.js"></script>     
+    </body>
+</html>
